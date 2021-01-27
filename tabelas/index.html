@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tabelas</title>
+  </head>
+  <body>
+    <h1>Estudando Tabelas</h1>
+
+    <h2>Tabela Básica</h2>
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+      </tr>
+      <tr>
+        <td>Will</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>Vlad</td>
+        <td>31</td>
+      </tr>
+      <tr>
+        <td>Balian</td>
+        <td>29</td>
+      </tr>
+    </table>
+
+    <h2>Tabela Organizada</h2>
+    <table>
+      <caption>Idades</caption>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mayk</td>
+          <td>35</td>
+        </tr>
+        <tr>
+          <td>Diego</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>Alok</td>
+          <td>29</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total:</td>
+          <td>3 pessoas</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>Tabela Complexa</h2>
+    <table>
+      <caption>Produzidos x Vendidos por Loja</caption>
+      <colgroup>
+        <col>
+        <col span="2" style="background-color: aqua;">
+        <col span="2" style="background-color: yellow">
+      </colgroup>
+      <thead>
+        <tr>
+          <th rowspan="2"></th>
+          <th colspan="2" scope="colgroup">Dinastia Foca</th>
+          <th colspan="2" scope="colgroup">Concorrência</th>
+        </tr>
+        <tr>
+          <th scope="col">Produzidos</th>
+          <th scope="col">Vendidos</th>
+          <th scope="col">Produzidos</th>
+          <th scope="col">Vendidos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Computadores</th>
+          <td>50</td>
+          <td>48</td>
+          <td>41</td>
+          <td>26</td>
+        </tr>
+        <tr>
+          <th scope="row">Camisetas</th>
+          <td>256</td>
+          <td>242</td>
+          <td>210</td>
+          <td>193</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
