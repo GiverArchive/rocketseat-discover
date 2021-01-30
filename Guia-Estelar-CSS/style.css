@@ -1,0 +1,11 @@
+/*
+  Importar outro CSS. Não é recomendável, mas existe.
+  @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+*/
+
+h1 {
+  margin: 20px;
+  padding: 10px;
+
+  border: 1px solid red;
+}
