@@ -1,0 +1,29 @@
+/*
+  !important
+  Sobreescreve todas as especificidades, quebra o fluxo da cascata.
+  Não é uma boa prática usar.
+
+  @At rules
+  Estão relacionadas ao comportamento do CSS. 
+
+  @import - Incluir um CSS externo.
+  @media - Regras condicionais para dispositivos.
+  @font-face - Fontes externas.
+  @keyframe - Animações.
+*/
+
+@import url("https://myserver.net/style.css");
+@import "https://myserver.net/style.css";
+
+@media (min-width: 500px) {
+  /* Regras aqui */
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+}
+
+@keyframes nameOfAnimation {
+  /* Regras aqui */
+}
