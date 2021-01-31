@@ -1,0 +1,16 @@
+/* 
+  - Junção de propriedades
+  - Resumido
+  - Mais legível
+*/
+
+div {
+  /* Propriedades individuais */
+  background-color: green;
+  background-image: url("https://meuservidor.net/imagem.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  /* Propriedades em Shorthand */
+  background: green url("https://meuservidor.net/imagem.svg") no-repeat left top;
+}
