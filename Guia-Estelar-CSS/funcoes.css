@@ -1,0 +1,11 @@
+/*
+  O nome da função é seguido de abertura e fechamento de parênteses.
+  Pode ter parâmetros entre os parênteses.
+*/
+
+@import url("https://meuservidor.net/style.css");
+
+h1 {
+  color: rgb(255, 0, 255);
+  width: calc(100% - 10px);
+}
