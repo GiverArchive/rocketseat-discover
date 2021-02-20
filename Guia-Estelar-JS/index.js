@@ -1,3 +1,24 @@
+// Eventos - MDN
+function onKeyToggle(key, press, player) {
+  // Switch
+  switch(key) {
+    case 'd':
+      player.right = press;
+      break;
+    case 'a':
+      player.left = press;
+      break;
+    case 'w':
+      player.up = press;
+      break;
+    case 's':
+      player.down = press;
+      break;
+    default:
+      break;
+  }
+}
+
 // Função construtora
 function Player(x, y, speed) {
   this.x = x;
@@ -55,11 +76,23 @@ function Game(player) {
   };
 }
 
+// MDN
 const canvas = document.getElementById('screen');
 const context = canvas.getContext('2d');
 
 const player = new Player(32, 32, 2.5);
 const game = new Game(player);
 
-game.tick();
-game.render(context);
+// Eventos
+document.addEventListener('keydown', (event) => onKeyToggle(event.key, true, player));
+document.addEventListener('keyup', (event) => onKeyToggle(event.key, false, player));
+
+function loop() {
+  game.tick();
+  game.render(context);
+
+  // Callback com referência de método
+  requestAnimationFrame(loop);
+}
+
+loop();
